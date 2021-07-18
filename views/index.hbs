@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Search by</h1>
+  
+            <form action='/apps' method="GET">
+                    <select placeholder="by" id='by' name='by'>
+
+                            <option  value="name">Name</option>
+                            <option  value="id">ID</option>
+
+
+                    </select>
+
+                <div id='coresponding-input'>
+                    <input placeholder="start at" id='start' name='start' type='number'/>
+                    <input placeholder="end at" id='end' name='end' type='number'/>
+                </div>
+                
+
+            
+                    <input placeholder="max" id='max' name='max' type='number' min='1'/>
+                    <select placeholder="order" id='order' name='order'>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                    </select>
+
+               <button type="submit">search</button>
+            </form>
+        </div>
+      </div>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>
+
